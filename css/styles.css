@@ -41,13 +41,15 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 91, 14, 45;
+  --bs-primary-rgb: 106, 52, 213;
   picker: #ffa781;
   picker: rgb(255, 167, 129);
   picker: #5b0e2d;
   picker: rgb(91, 14, 45);
   picker: #00e1d9;
   picker: rgb(0, 225, 217);
+  picker: #6A34D5;
+  picker: rgb(106, 52, 213);
   --bs-secondary-rgb: 91, 14, 45;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -246,7 +248,7 @@ sup {
 }
 
 a {
-  color: #00e1d9;
+  color: #6A34D5;
   text-decoration: underline;
 }
 a:hover {
