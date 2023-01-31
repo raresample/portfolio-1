@@ -248,7 +248,7 @@ sup {
 }
 
 a {
-  color: #6A34D5;
+  color: #DB0A5B;
   text-decoration: underline;
 }
 a:hover {
@@ -11453,3 +11453,13 @@ section.resume-section .resume-section-content {
 .list-inline-item {
   color: #ffa781;
 } */
+
+
+#mentor h4 {
+  margin-top: 1rem;
+  line-height: 0.75;
+}
+
+#mentor ul {
+  margin-top: 1rem;
+}
