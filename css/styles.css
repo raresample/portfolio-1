@@ -11457,10 +11457,13 @@ section.resume-section .resume-section-content {
   color: #ffa781;
 } */
 
+h4 {
+  line-height: 0.875;
+}
 
 #mentor h4 {
   margin-top: 1rem;
-  line-height: 0.75;
+  line-height: 0.875;
 }
 
 #mentor ul {
