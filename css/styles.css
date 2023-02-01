@@ -11414,7 +11414,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #01b5af;
+  background-color: #ee1669;
 }
 
 .dev-icons {
@@ -11468,4 +11468,27 @@ h4 {
 
 #mentor ul {
   margin-top: 1rem;
+}
+
+.card {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .cards-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cards-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+  }
 }
