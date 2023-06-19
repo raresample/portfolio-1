@@ -82,7 +82,10 @@
             <h4><a href="https://sneaker-feed.netlify.app/" target="_blank">View Project</a></h4>
             <div class="repo-link"><a href="https://github.com/raresample/sneaker-feed" target="_blank">Github Repo</a></div>
             <p>
-              Next.js app displaying sneaker releases in chronological order.  Created API endpoints by parsing a MySQL database with MySQL2.  Next frontend consumes the resulting JSON data.  Dynamic routes implemented for individual product pages.  Infinite scroll feature confers multiple benefits, including user engagement, mobile/tablet friendly interface, opportunity to seamlessly integrate ads.  I would probably prefer pagination if the project was desgined to help a user find specific information, but because this is just a type of "news feed", it was worth exploring.
+              Next.js app displaying sneaker releases in chronological order.  Created API endpoints by parsing a MySQL database with MySQL2.  Next frontend consumes the resulting JSON data.  Dynamic Routes implemented for individual product pages.  Infinite scroll feature confers multiple benefits, including user engagement, mobile/tablet friendly interface, opportunity to seamlessly integrate ads.  I would probably prefer pagination if the project was desgined to help a user find specific information, but because this is just a type of "news feed", it was worth exploring.
+            </p>
+            <p>
+              Soon after completing this project, I wanted to learn pagination.  So I created a <a href="https://sneaker-feed.netlify.app/index-paginated" target="_blank">paginated product list</a> displaying the same data with 10 products per page.  There are hundreds of products in the source database, so I limited the SQL query to 100 as a quick fix to avoid an ugly mess of page-number buttons.  The next step will be to remove that query limit and render a dynamic list of page-number buttons.  On every page except the first, there should always be 'Back' and 'Jump to first page' buttons.  Similarly, on every page except the last, there should be 'Forward' and 'Jump to last page' buttons.
             </p>
             <h5>Technologies:</h5>
             <ul>
