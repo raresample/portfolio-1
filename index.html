@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>Aaron Hope - Web Developer</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Aaron Hope</span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/aaron-hope-web-developer.jpg" alt="..." /></span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/aaron-hope-web-developer.jpg" alt="..."></span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -54,16 +54,42 @@
           </div>
         </div>
       </section>
-      <hr class="m-0" />
+      <hr class="m-0">
       <!-- portfolio-->
       <section class="resume-section" id="portfolio">
         <div class="resume-section-content">
           <h2 class="mb-5">Portfolio</h2>
+          <div class="project my-5">
+            <img src="./assets/img/aaron-hope-next-js-web-developer-cobbled-app.png" alt="Aaron Hope Next.js Developer" class="img-fluid">
+            <h3 class="mt-4">Cobbled</h3>
+            <h4><a href="https://cobbled-sneakers.netlify.app/" target="_blank">View Project</a></h4>
+            <div class="repo-link mb-2"><a href="https://github.com/raresample/cobbled" target="_blank">Github Repo</a></div>
+            <p>
+              Next.js curated marketplace app.  Created API endpoints by parsing a MySQL database with <a href="https://www.npmjs.com/package/mysql2" target="_blank">MySQL2</a>.  Next frontend consumes the resulting JSON data.
+            </p>
+            <p>
+              Overall design is inspired by <a href="https://www.solesense.com/en-us/air-jordan-11-retro-2021-cool-grey-ct8012-005" target="_blank">Solesense</a>, a sneaker search engine built with Django/Python.  Responsive paginated grid shows 12 cards per page in 1-3 columns depending on screen width.
+            </p>
+            <p>
+              Individual product pages use Dynamic Routes based on product SKU.  Users get detailed product information and can quickly compare prices from multiple stores.  Display collapses from two columns into one at 768px width.
+            </p>
+            <p>
+              Footer demonstrates display of category links, utility links, and social media links.  Social media icons provided by Font Awesome via their <a href="https://www.npmjs.com/package/@fortawesome/react-fontawesome" target="_blank">react-fontawesome</a> and <a href="https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons" target="_blank">free-brands-svg-icons</a> packages.  This should perform better than using their CDN.
+            </p>
+            <h5>Technologies:</h5>
+            <ul>
+              <li>Next.js</li>
+              <li>MySQL</li>
+              <li>HTML</li>
+              <li>Tailwind</li>
+              <li>Font Awesome</li>
+            </ul>
+          </div>
           <div class="project mt-5">
             <img src="./assets/img/aaron-hope-vuejs-weather-list.png" alt="Aaron Hope Vue.js Developer" class="img-fluid">
-            <h3>My Weather</h3>
+            <h3 class="mt-4">My Weather</h3>
             <h4><a href="https://glass--vue-weather-list.netlify.app/" target="_blank">View Project</a></h4>
-            <div class="repo-link"><a href="https://github.com/raresample/weather-list" target="_blank">Github Repo</a></div>
+            <div class="repo-link mb-2"><a href="https://github.com/raresample/weather-list" target="_blank">Github Repo</a></div>
             <p>
               Developed web app to show current weather conditions in different cities.  Easy to add or remove locations and sort them according to user preference.  Vue Weather consumes the OpenWeather API, uses Vue.js for the front end, and Firebase on the back end.  I designed a simple Glassmorphic theme that incorporates subtle responsiveness to make sure it looks decent on any screen size.
             </p>
@@ -78,9 +104,9 @@
           </div>
           <div class="project my-5">
             <img src="./assets/img/aaron-hope-next-js-sneaker-feed.png" alt="Aaron Hope Next.js Developer" class="img-fluid">
-            <h3>Sneaker Feed</h3>
+            <h3 class="mt-4">Sneaker Feed</h3>
             <h4><a href="https://sneaker-feed.netlify.app/" target="_blank">View Project</a></h4>
-            <div class="repo-link"><a href="https://github.com/raresample/sneaker-feed" target="_blank">Github Repo</a></div>
+            <div class="repo-link mb-2"><a href="https://github.com/raresample/sneaker-feed" target="_blank">Github Repo</a></div>
             <p>
               Next.js app displaying sneaker releases in chronological order.  Created API endpoints by parsing a MySQL database with MySQL2.  Next frontend consumes the resulting JSON data.  Dynamic Routes implemented for individual product pages.  Infinite scroll feature confers multiple benefits, including user engagement, mobile/tablet friendly interface, opportunity to seamlessly integrate ads.  I would probably prefer pagination if the project was desgined to help a user find specific information, but because this is just a type of "news feed", it was worth exploring.
             </p>
@@ -97,12 +123,12 @@
           </div>
           <div class="project mt-5" id="mentor">
             <img src="./assets/img/frontend-mentor-aaron-hope.gif" alt="Aaron Hope Front End Web Developer" class="img-fluid">
-            <h3>Frontend Mentor Challenges</h3>
+            <h3 class="mt-4">Frontend Mentor Challenges</h3>
             <!-- <div>
               <h4><a href="https://fmentor-news-homepage.netlify.app/" target="_blank">News Homepage</a></h4>
               <a href="https://github.com/raresample/fm-news-homepage" target="_blank">Github Repo</a>
               <h4><a href="https://signup-form-component-fm.netlify.app/" target="_blank">Signup Form Component</a></h4>
-              <div class="repo-link"><a href="https://github.com/raresample/fm-signup-form-component" target="_blank">Github Repo</a></div>
+              <div class="repo-link mb-2"><a href="https://github.com/raresample/fm-signup-form-component" target="_blank">Github Repo</a></div>
               <h4><a href="https://social-proof-section-fm-aaron-hope.netlify.app/" target="_blank">Social Proof Section</a></h4>
               <a href="https://github.com/raresample/frontend-mentor-social-proof-section" target="_blank">Github Repo</a>
               <h4><a href="https://3-col-preview-card-component-fm.netlify.app/" target="_blank">3 Column Preview Card Component</a></h4>
@@ -211,9 +237,9 @@
           </div>
           <div class="project mt-5">
             <img src="./assets/img/gratitude-journal-aaron-hope-web-developer.png" alt="Aaron Hope JavaScript Dev" class="img-fluid">
-            <h3>Gratitude Journal</h3>
+            <h3 class="mt-4">Gratitude Journal</h3>
             <h4><a href="https://snapshot--vue-gratitude.netlify.app/" target="_blank">View Project</a></h4>
-            <div class="repo-link"><a href="https://github.com/raresample/gratitude-journal" target="_blank">Github Repo</a></div>
+            <div class="repo-link mb-2"><a href="https://github.com/raresample/gratitude-journal" target="_blank">Github Repo</a></div>
             <p>
               Application demonstrating basic CRUD functionality.  Authorized users can create gratitude journal entries to share what they’re thankful for.  Each post has like and delete buttons.
             </p>
@@ -227,7 +253,7 @@
           </div>
         </div>
       </section>
-      <hr class="m-0" />
+      <hr class="m-0">
       <!-- Skills-->
       <section class="resume-section" id="skills">
         <div class="resume-section-content">
@@ -305,18 +331,18 @@
           </ul>
         </div>
       </section>
-      <hr class="m-0" />
+      <hr class="m-0">
 
       <!-- Resume -->
       <section class="resume-section" id="resume">
         <div class="resume-section-content">
           <h2 class="mb-5">Resume</h2>
           <p>
-            <a href="./assets/aaron-hope-web-developer-resume.pdf" target="_blank"><h4>PDF Resume</h4></a>
-          </p>
+            <h4><a href="./assets/aaron-hope-web-developer-resume.pdf" target="_blank">PDF Resume</a></h4>
+          </p>  
         </div>
       </section>
-      <hr class="m-0" />
+      <hr class="m-0">
 
       <!-- Interests-->
       <section class="resume-section" id="interests">
@@ -328,7 +354,7 @@
           <p class="mb-0">People tell me I have a talent for teaching/explaining things, but I never wanted to work in a traditional school.  So I'm really looking forward to seeing how I can leverage that and sharpen my communication skills in this new chapter of my professional life.</p>
         </div>
       </section>
-      <hr class="m-0" />
+      <hr class="m-0">
 
     </div>
     <!-- Bootstrap core JS-->
