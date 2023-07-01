@@ -65,13 +65,13 @@
             <h4><a href="https://cobbled-sneakers.netlify.app/" target="_blank">View Project</a></h4>
             <div class="repo-link mb-2"><a href="https://github.com/raresample/cobbled" target="_blank">Github Repo</a></div>
             <p>
-              Next.js curated marketplace app.  Created API endpoints by parsing a MySQL database with <a href="https://www.npmjs.com/package/mysql2" target="_blank">MySQL2</a>.  Next frontend consumes the resulting JSON data.
+              Next.js curated marketplace app.  Parsed MySQL database with <a href="https://www.npmjs.com/package/mysql2" target="_blank">MySQL2</a> to create API endpoints.  Next frontend consumes the resulting JSON data.
             </p>
             <p>
-              Overall design is inspired by <a href="https://www.solesense.com/en-us/air-jordan-11-retro-2021-cool-grey-ct8012-005" target="_blank">Solesense</a>, a sneaker search engine built with Django/Python.  Responsive paginated grid shows 12 cards per page in 1-3 columns depending on screen width.
+              Overall design is inspired by <a href="https://www.solesense.com/en-us/air-jordan-11-retro-2021-cool-grey-ct8012-005" target="_blank">Solesense</a>, a sneaker search engine built with Django/Python.  Responsive paginated grid shows 12 cards per page in 1-3 columns, depending on screen width.
             </p>
             <p>
-              Individual product pages use Dynamic Routes based on product SKU.  Users get detailed product information and can quickly compare prices from multiple stores.  Display collapses from two columns into one at 768px width.
+              Individual product pages use Dynamic Routes based on product SKU.  Users get detailed product information and can quickly compare prices from multiple stores.  Display collapses from two columns into one at 768px width for easier viewing on tablets and phones.
             </p>
             <p>
               Footer demonstrates display of category links, utility links, and social media links.  Social media icons provided by Font Awesome via their <a href="https://www.npmjs.com/package/@fortawesome/react-fontawesome" target="_blank">react-fontawesome</a> and <a href="https://www.npmjs.com/package/@fortawesome/free-brands-svg-icons" target="_blank">free-brands-svg-icons</a> packages.  This should perform better than using their CDN.
@@ -81,7 +81,7 @@
               <li>Next.js</li>
               <li>MySQL</li>
               <li>HTML</li>
-              <li>Tailwind</li>
+              <li>Tailwind CSS</li>
               <li>Font Awesome</li>
             </ul>
           </div>
@@ -91,7 +91,10 @@
             <h4><a href="https://glass--vue-weather-list.netlify.app/" target="_blank">View Project</a></h4>
             <div class="repo-link mb-2"><a href="https://github.com/raresample/weather-list" target="_blank">Github Repo</a></div>
             <p>
-              Developed web app to show current weather conditions in different cities.  Easy to add or remove locations and sort them according to user preference.  Vue Weather consumes the OpenWeather API, uses Vue.js for the front end, and Firebase on the back end.  I designed a simple Glassmorphic theme that incorporates subtle responsiveness to make sure it looks decent on any screen size.
+              Developed web app to show current weather conditions in different cities.  Easy to add or remove locations and sort them according to user preference.  Registered users will find their chosen cities upon returning.
+            </p>
+            <p>
+              Vue Weather consumes the OpenWeather API, uses Vue.js for the front end, and Firebase on the back end.  I designed a simple Glassmorphic theme that incorporates subtle responsiveness to make sure it looks decent on any screen size.
             </p>
             <h5>Technologies:</h5>
             <ul>
@@ -111,7 +114,10 @@
               Next.js app displaying sneaker releases in chronological order.  Created API endpoints by parsing a MySQL database with MySQL2.  Next frontend consumes the resulting JSON data.  Dynamic Routes implemented for individual product pages.  Infinite scroll feature confers multiple benefits, including user engagement, mobile/tablet friendly interface, opportunity to seamlessly integrate ads.  I would probably prefer pagination if the project was desgined to help a user find specific information, but because this is just a type of "news feed", it was worth exploring.
             </p>
             <p>
-              Soon after completing this project, I wanted to learn pagination.  So I created a <a href="https://sneaker-feed.netlify.app/index-paginated" target="_blank">paginated product list</a> displaying the same data with 10 products per page.  There are hundreds of products in the source database, so I limited the SQL query to 100 as a quick fix to avoid an ugly mess of page-number buttons.  The next step will be to remove that query limit and render a dynamic list of page-number buttons.  On every page except the first, there should always be 'Back' and 'Jump to first page' buttons.  Similarly, on every page except the last, there should be 'Forward' and 'Jump to last page' buttons.
+              Soon after completing this project, I wanted to learn pagination.  So I created a <a href="https://sneaker-feed.netlify.app/index-paginated" target="_blank">paginated product list</a> displaying the same data with 10 products per page.  There are hundreds of products in the source database, so I limited the SQL query to 100 as a quick fix to avoid an ugly mess of page-number buttons.
+            </p>
+            <p>
+              The next step will be to remove that query limit and render a dynamic list of page-number buttons.  On every page except the first, there should always be 'Back' and 'Jump to first page' buttons.  Similarly, on every page except the last, there should be 'Forward' and 'Jump to last page' buttons.
             </p>
             <h5>Technologies:</h5>
             <ul>
@@ -346,10 +352,21 @@
       <section class="resume-section" id="interests">
         <div class="resume-section-content">
           <h2 class="mb-5">Interests</h2>
-          <p>I'm a lifelong learner, deeply interested in topics including mental and physical health, fitness, and longevity.  The synergy between my passion for fashion and knack for organization led me to take up coding so I can build a dream project I'm working on in my spare time.</p>
-          <p>I absolutely love food, enjoying everything from gardening to cooking, as well as exploring new restaurants from the plethora available here in Southern California.</p>
-          <p>Much of my content consumption in recent days has shifted to development and design.  But I still like watching comedy tv, films, and stand-up specials, along with documentaries and reality-bending science fiction.</p>
-          <p class="mb-0">People tell me I have a talent for teaching/explaining things, but I never wanted to work in a traditional school.  So I'm really looking forward to seeing how I can leverage that and sharpen my communication skills in this new chapter of my professional life.</p>
+          <p>
+            I'm a lifelong learner, deeply interested in topics including design, psychology, fitness, and longevity.  The synergy between my fascination with fashion and my knack for organization dovetailed into me taking up coding, so I can build a dream project I'm working on in my spare time.
+          </p>
+          <p>
+            A friend recently remarked that I seem to relish challenging myself.  I think she's right.  I have a deep-seated curiosity about so many aspects of life, and am driven to explore broadly and deeply.
+          </p>
+          <p>
+            I absolutely love food, enjoying everything from gardening to cooking, as well as exploring new restaurants from the plethora available here in Southern California.
+          </p>
+          <p>
+            Much of my content consumption in recent days has shifted to development and design.  But I still like watching comedy tv, films, and stand-up specials, along with documentaries and reality-bending science fiction.
+          </p>
+          <p class="mb-0">
+            A bunch of people have told me I have a talent for teaching/explaining things, but I never wanted to work in a traditional school.  So I'm really looking forward to seeing how I can leverage that and sharpen my communication skills in this new chapter of my professional life.
+          </p>
         </div>
       </section>
       <hr class="m-0">
